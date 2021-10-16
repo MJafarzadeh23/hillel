@@ -1,0 +1,11 @@
+package home.work12.loginUser;
+
+public class WrongLoginException extends Exception {
+
+    public WrongLoginException() {
+    }
+
+    public WrongLoginException(String message) {
+        super(message);
+    }
+}
