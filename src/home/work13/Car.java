@@ -6,26 +6,15 @@ public class Car extends Vehicle {
 
     private String carModel;
     private int doorsNum;
-    private /*final*/ CarType carTypeEnum;
-    private String carColor;
-    private int carPlateNumber;
+    private CarType carTypeEnum;
 
     enum CarType {CAR, TRUCK}
 
-    public Car(String model, int doorsNumber, CarType carType, String color, int plateNumber) {
+    public Car(String color, int plateNumber,  CarType carType, String model,  int doorsNumber) {
+        super(color, plateNumber);
+        this.carTypeEnum = carType;
         this.carModel = model;
         this.doorsNum = doorsNumber;
-        this.carTypeEnum = carType;
-        this.carColor = color;
-        this.carPlateNumber = plateNumber;
-    }
-
-    public String getCarColor() {
-        return carColor;
-    }
-
-    public int getCarPlateNumber() {
-        return carPlateNumber;
     }
 
     public CarType getCarTypeEnum() {
