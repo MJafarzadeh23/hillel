@@ -7,10 +7,11 @@ public class RestaurantMain {
 
         for (Dish dish : dishes) {
             rest.printMenu(dish);
-            rest.selectDish(dish);
             System.out.println("------------------------------------------------------------------------");
         }
         System.out.println("***********************************************************************");
-        rest.selectDish(Dish.MARGHERITA);
+        Dish selectedDish = Dish.MARGHERITA;
+        System.out.println("You chose: " + rest.getName(selectedDish));
+        rest.selectDish(selectedDish);
     }
 }

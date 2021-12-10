@@ -16,6 +16,10 @@ public class Restaurant {
         printMenu(dish);
         System.out.println("Expected time of preparation: " + dish.getReparationTime());
     }
+
+    public String getName(Dish dish) {
+        return dish.getDishName();
+    }
 }
 
 
